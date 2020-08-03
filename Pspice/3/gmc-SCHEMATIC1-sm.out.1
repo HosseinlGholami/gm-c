@@ -1,0 +1,77 @@
+
+**** 06/24/18 17:34:02 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-sm"  [ E:\AZ\Gm_c filter\3\gmc-schematic1-sm.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "gmc-schematic1-sm.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 100 1 3000K
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\gmc-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING gmc-SCHEMATIC1.net ****
+* source GMC
+X_M13         N05735 N05735 N05995 BSS119/SIE
+I_I1         N05885 0 DC 1000mAdc  
+X_M32         IO2 0 N19632 BSS110/SIE
+X_M54         IO5 N20242 N20288 BSS119/SIE
+X_M41         N19897 IO5 N19955 BSS110/SIE
+X_M23         N18493 N18493 N18539 BSS119/SIE
+X_M61         N20626 0 N20684 BSS110/SIE
+X_M14         IO1 N05735 N05995 BSS119/SIE
+V_V3         N19620 0 6Vdc
+I_I4         N19955 0 DC 1000mAdc  
+X_M21         N18493 IO1 N18551 BSS110/SIE
+I_I6         N20684 0 DC 1000mAdc  
+X_M34         IO2 N19574 N19620 BSS119/SIE
+C_C1         0 IO2  0.55u  
+X_M53         N20242 N20242 N20288 BSS119/SIE
+C_C2         0 IO4  1.11u  
+X_M42         IO4 IO2 N19955 BSS110/SIE
+I_I2         N18551 0 DC 1000mAdc  
+X_M62         IO5 IO5 N20684 BSS110/SIE
+V_V7         IO1 0 DC 0Vdc AC 1Vac 
+X_M51         N20242 0 N20300 BSS110/SIE
+V_V4         N19943 0 6Vdc
+X_M11         N05735 IO2 N05885 BSS110/SIE
+V_V6         N20672 0 6Vdc
+X_M33         N19574 N19574 N19620 BSS119/SIE
+X_M22         IO2 IO2 N18551 BSS110/SIE
+V_V1         N05995 0 6Vdc
+X_M44         IO4 N19897 N19943 BSS119/SIE
+X_M12         IO1 IO1 N05885 BSS110/SIE
+X_M64         IO5 N20626 N20672 BSS119/SIE
+I_I5         N20300 0 DC 1000mAdc  
+V_V2         N18539 0 6Vdc
+X_M31         N19574 IO4 N19632 BSS110/SIE
+C_C2         0 IO5  0.55u  
+$
+ERROR -- Name "C_C2" is defined more than once
+X_M24         IO2 N18493 N18539 BSS119/SIE
+X_M52         IO5 IO4 N20300 BSS110/SIE
+X_M43         N19897 N19897 N19943 BSS119/SIE
+I_I3         N19632 0 DC 1000mAdc  
+X_M63         N20626 N20626 N20672 BSS119/SIE
+V_V5         N20288 0 6Vdc
+
+**** RESUMING gmc-schematic1-sm.sim.cir ****
+.END
+

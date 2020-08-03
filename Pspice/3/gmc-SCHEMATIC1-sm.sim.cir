@@ -1,0 +1,17 @@
+** Profile: "SCHEMATIC1-sm"  [ E:\AZ\Gm_c filter\3\gmc-schematic1-sm.sim ] 
+
+** Creating circuit file "gmc-schematic1-sm.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 100 1 300mega
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\gmc-SCHEMATIC1.net" 
+
+
+.END
